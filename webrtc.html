@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webRTC</title>
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="display: flex; flex-direction: column;">
+        <video id="localVideo" autoplay muted></video>
+        <p style="font-size: 50px; text-align: center;">Sender</p>
+    </div>
+    <button id="startButton" style="width: 200px; height: 200px; font-size: 50px;">Start</button>
+    <div style="display: flex; flex-direction: column;">
+        <video id="remoteVideo" autoplay></video>
+        <p style="font-size: 50px; text-align: center;" >Receiver</p>
+    </div>
+    <script src="webrtc.js"></script>
+</body>
+
+</html>
